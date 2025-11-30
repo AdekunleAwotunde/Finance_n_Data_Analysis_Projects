@@ -1,30 +1,28 @@
-Title: MANUFACTURING DOWNTIME ANALYSIS
-Summary: Pinpointed the top 5 factors that accounted for 80% of the downtime and the overall efficiency (64%).
+TITLE: Manufacturing Downtime Analysis in Excel
+SUMMARY: Pinpointed the top 5 factors that accounted for 80% of the downtime and the overall efficiency (64%).
 
-Business case
+BUSINESS CASE:
 Problem: Management noticed a downward trend in productive outputs of operating staff and wanted insights on how to improve line efficiency using productivity and downtime data.
 Success metric: Reduce downtime hours and improve overall efficiency significantly.
 
-Data
-Source: Maven Analytics (2019–2024) 
-4 tables:
+DATA
+Source: Maven Analytics
+Tables:
 Line productivity - 39 rows, 7 columns (product, batch, operator, start_time, end_time, batch_time)
 Products - 7 rows, 4 columns (product_name, flavor, size, min_batch_time)
 Downtime factors - 13 rows, 4 columns (factor, description, operator_error, downtime)
 Line downtime - 40 rows, 14 columns (batch, operator, downtime_factor)
 
-,  (120k rows, 42 columns (tenure, monthly_charge, support_calls, plan_type, last_login).
-Notes: Personally identifiable info removed.
+APPROACH
+Analysis: XLookup → custom calculations → pivoting → charts → dashboard.
+Tool(s): Excel
 
-Approach
-Pipeline: SQL extraction → pandas cleaning → feature engineering → Random Forest classifier → threshold tuning for recall.
-Tools: Python, pandas, scikit-learn, SHAP for explainability.
+MAIN FINDINGS
+Overall efficiency was 64%.
+The top 5 factors accounted for 80% of the downtime.
+3 of the 5 main downtime factors were due to operator.
 
-Main findings
-Tenure, number of support calls, and last_login_gap were top predictors (see figure).
-Targeting top 10% risk group yields expected ROI = $X.
-
-Recommendation
-Launch a 3-month retention campaign with offers to top decile.
-Add referrer & promotion data to enrich model.
-Deploy weekly scoring and alert Product team for sudden distribution shifts.
+RECOMMENDATION
+Start with machine adjustment training for all operators.
+Provide special batch change for Mac (the least efficient operator).
+Apply preventive maintenance for machine and double check inventory levels.
