@@ -32,8 +32,6 @@ WITH ds AS (SELECT	 FLOOR(s.yearID / 10) * 10 AS decade, sd.name_full, COUNT(DIS
             
 	 rn AS (SELECT	decade, name_full, num_players,
 					ROW_NUMBER() OVER (PARTITION BY decade ORDER BY num_players DESC) AS row_num
-                    /* ALTERNATIVE SOLUTION UPDATE: ROW_NUMBER will return exactly 3 schools for each decade. To account for ties,
-                       use DENSE_RANK instead to return the top 3 player counts, which could potentially include more than 3 schools */
 			FROM	ds)
             
 SELECT	decade, name_full, num_players
