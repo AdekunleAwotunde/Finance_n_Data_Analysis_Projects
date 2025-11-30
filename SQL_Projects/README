@@ -1,0 +1,41 @@
+SQL Player Performance & Career Analysis
+
+in this project, I used advanced SQL querying techniques to explore how player statistics, salaries, and career trajectories have evolved over time and across teams in the league. The analysis spans four key datasets and covers historical trends, team behaviors, and player career patterns.
+
+DATA SOURCE
+Maven Analytics — four relational tables:
+-players (18k+ rows)
+-salaries (24k+ rows)
+-school_details (1k+ rows)
+-schools (17k+ rows)
+
+PROJECT OBJECTIVES & INSIGHTS
+1️⃣ School Analysis
+Explored how schools contributed to player development over time.
+-Identified how many schools produced players in each decade.
+-Listed the top 5 schools with the highest number of players.
+-Found the top 3 player-producing schools per decade.
+
+2️⃣ Salary Analysis
+Analyzed spending behavior across all teams.
+-Found the top 20% of teams by average annual spending.
+-Calculated cumulative salary spending across years for every team.
+-Determined the first year each team crossed $1 billion in cumulative spending.
+
+3️⃣ Player Career Analysis
+Tracked complete career timelines for all players.
+-Calculated age at debut, age at last game, and career length (in years), then ranked players from longest to shortest career.
+-Identified the starting team and ending team for each player.
+-Counted how many players started and ended on the same team and had careers longer than a decade.
+
+4️⃣ Player Comparison Analysis
+Compared attributes and trends across players and teams.
+-Found players who share the same birthday.
+-Created a team-level batting summary showing % of players batting right, left, or both.
+-Analyzed how average debut height and weight changed over the years, including decade-over-decade differences.
+
+TOOLS & TECHNIQUES
+SQL (window functions, CTEs, date functions, aggregate functions, subqueries)
+Data cleaning through SQL
+Relational joins across large tables
+
