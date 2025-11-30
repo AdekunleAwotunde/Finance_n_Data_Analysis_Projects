@@ -1,4 +1,4 @@
-TITLE: Manufacturing Downtime Analysis in Excel
+MANUFACTURING DOWNTIME ANALYSIS
 SUMMARY: Pinpointed the top 5 factors that accounted for 80% of the downtime and the overall efficiency of operators (64%).
 
 BUSINESS CASE:
@@ -14,7 +14,7 @@ Downtime factors - 13 rows, 4 columns (factor, description, operator_error, down
 Line downtime - 40 rows, 14 columns (batch, operator, downtime_factor)
 
 APPROACH
-Analysis: XLookup → custom calculations → pivoting → charts → dashboard.
+Analysis: Xlookup → index/match → pivot tables → charts → dashboard.
 Tool(s): Excel
 
 MAIN FINDINGS
