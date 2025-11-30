@@ -1,1 +1,23 @@
-About Project:
+Title: Churn Prediction for Telecom
+Summary: Predicted churn risk to prioritize retention; model achieved 0.78 AUC and enabled campaigns projected to save $120k/year.
+
+Business case
+Problem: High monthly churn (6%) causing revenue loss; stakeholders: Growth & CS teams.
+Success metric: Increase retention rate by 2% in target segment.
+
+Data
+Source: customer DB (2019–2024), 120k rows, 42 columns (tenure, monthly_charge, support_calls, plan_type, last_login).
+Notes: Personally identifiable info removed.
+
+Approach
+Pipeline: SQL extraction → pandas cleaning → feature engineering → Random Forest classifier → threshold tuning for recall.
+Tools: Python, pandas, scikit-learn, SHAP for explainability.
+
+Main findings
+Tenure, number of support calls, and last_login_gap were top predictors (see figure).
+Targeting top 10% risk group yields expected ROI = $X.
+
+Recommendation
+Launch a 3-month retention campaign with offers to top decile.
+Add referrer & promotion data to enrich model.
+Deploy weekly scoring and alert Product team for sudden distribution shifts.
