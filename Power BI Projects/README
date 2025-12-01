@@ -1,0 +1,43 @@
+ADVENTURE WORK CYCLES KPI DASHBOARD
+
+BUSINESS CASE
+A global manufacturing company that produces cycling equipment and accessories needs a data-driven way to track key performance metrics (Sales, Revenue, Profit, Returns), compare performance across regions,, analyze product- and category-level trends, identify high-value customers.
+Management wants a dashboard that integrates multiple data sources and provides real-time insights for strategic decision-making.
+
+OBJECTIVES
+-Connect & Transform Raw Data
+-Build a Relational Data Model
+-Create DAX Measures & Calculated Columns
+-Design Interactive Power BI Dashboard
+
+DATA SOURCE
+Maven Analytics - 8 tables (sales, returns, products, product_categories, product_subcategories, customers, territory, calendar)
+
+DATA MODEL OVERVIEW
+Fact Tables: Sales, Returns
+Dimension Tables: Customers, Products, Product Categories, Product Subcategories, Territory, Calendar
+Relationships built using primary keys and foreign keys
+Implemented standard snowflake-schema:
+Fact → Dimensions → Dimensions → Measure Layer
+
+KEY DAX MEASURES
+Adjusted revenue, rolling profit, order target gap, YOY revenue %, average revenue per customer, etc.
+(See full DAX syntax and calculations in the project_workbook)
+
+DASHBOARD FEATURES
+Executive KPI Summary: Revenue, Profit, Returns, Orders, Return Rate, Revenue Trend, Top 10 Products
+Regional Sales Map: Compare territories across 3 continents - Europe, North America, and Pacific
+Product-Level Analysis: Best-performing product lines and categories
+Customer Insights: High-value customers, customer acquisition, and customer classifications
+Interactive Controls: Slicers, Custom Navigation Buttons, Bookmarks, and more.
+
+KEY INSIGHTS
+Identified high-value customers who drive majority of revenue
+Revealed regional disparities in profit and return rates
+Highlighted top-performing categories to guide production planning
+
+HOW TO USE
+Download the project_workbook.pbix file
+Open in Power BI Desktop
+Ensure sample data paths are correct
+View data model, measures, and dashboard
