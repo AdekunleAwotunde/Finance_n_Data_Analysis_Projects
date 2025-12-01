@@ -1,0 +1,41 @@
+WORLDWIDE RESORTS INTERACTIVE DASHBOARD (DASH APP)
+
+This project is an interactive resort recommendation dashboard built with Plotly Dash in Python.
+It allows users to explore global ski resorts across all continents and filter them based on preferences such as price, skiing conditions, and amenities.
+
+The app helps users quickly identify the best resort options based on budget, region, and ranking metrics.
+
+KEY FEATURES
+🔹 Tab 1 — Map of Skiing Hotspots
+A global scatter_mapbox visualization plotting all ski resorts.
+Interactive filters allow users to tailor results based on:
+-Maximum Price Slider
+-Summer Skiing (checkbox)
+-Night Skiing (checkbox)
+-Resorts with Snowparks (checkbox)
+The filters update the map live, helping users visually locate suitable destinations.
+
+🔹 Tab 2 — Country & Resort Report
+A multi-column analytical layout:
+1. Sidebar Filters
+-Select a Continent
+-Automatically update a second dropdown to show Countries in the selected continent
+-Select a performance metric to visualize (e.g., price, elevation, slopes, cannons, etc.)
+2. Top 10 Resorts Bar Chart
+-Bar chart showing the top 10 resorts in the chosen country
+-X-axis shows resort names (labels optionally removed for readability)
+-Y-axis shows the user-selected metric
+
+Helps with ranking & quick comparison
+
+3. Resort Report Card
+Displays key information about the selected resort, including:
+-Resort Name
+-Elevation Rank
+-Slope Rank
+-Price Rank
+-Cannon Rank
+
+TOOLS & TECHNIQUES
+Python, Pandas, Plotly Express, Dash, Html, CSS, Dash Bootstrap Components, Dash Bootstrap Templates
+                            
